@@ -1,0 +1,21 @@
+{
+  "name": "dreamsync",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "glob": "^11.0.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "uuid": "^11.1.0"
+  },
+  "description": ""
+}

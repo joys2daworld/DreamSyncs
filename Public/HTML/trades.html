@@ -1,0 +1,52 @@
+<!-- trades.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trades - DreamSync</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <script src="/js/tradesScript.js" defer></script>
+</head>
+<body>
+  <div class="navbar">
+    <h1>Welcome to DreamSync</h1>
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/duels">Duels</a></li>
+      <li><a href="/trades">Trades</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>‧₊˚DreamSync Trades‧₊˚</h2>
+    <p>Trade notes, reviewers, and school-related services!</p>
+
+    <!-- Trade Offer Form -->
+    <form id="tradeForm">
+      <input type="text" id="offerTitle" placeholder="What are you offering?" required />
+      
+      <!-- Dropdown for Selecting Trade Type -->
+      <select id="tradeType" required>
+        <option value="" disabled selected>Select Trade Type</option>
+        <option value="Notes">Notes</option>
+        <option value="Reviewers">Reviewers</option>
+        <option value="School-Based Services">School-Based Services</option>
+      </select>
+
+      <input type="text" id="lookingFor" placeholder="What are you looking for?" required />
+      <button type="submit">Post Trade</button>
+    </form>
+
+    <!-- Available Trades List -->
+    <div id="tradeList">
+      <h3>Available Trades:</h3>
+      <!-- Trades will be dynamically listed here -->
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 DreamSync. All rights reserved.</p>
+  </footer>
+</body>
+</html>

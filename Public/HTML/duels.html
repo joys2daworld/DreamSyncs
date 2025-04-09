@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duels - DreamSync</title>
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Link to the CSS file -->
+    <script src="/js/duelsScript.js" defer></script> <!-- Link to the JS file -->
+</head>
+<body>
+    <div class="navbar">
+        <h1>Welcome to DreamSync</h1>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/duels">Duels</a></li>
+            <li><a href="/trades">Trades</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>‧₊˚Duels‧₊˚</h2>
+        <p>Challenge others to tasks and compete for the best results!</p>
+
+        <!-- Duels Section (STEP 1: Available Duels) -->
+        <div class="duel-section">
+            <h3>Available Duels:</h3>
+            <ul>
+                <li>Subject: Org. Man. | Competitor: User1</li>
+                <li>Subject: CPAR | Competitor: User2</li>
+                <li>Subject: 21st Century Literature | Competitor: User3</li>
+                <li>Subject: Philosophy | Competitor: User4</li>
+            </ul>
+        </div>
+
+        <!-- Challenge Form (STEP 2: Challenge Someone) -->
+        <div class="challenge-form">
+            <h3>Challenge Someone!</h3>
+            <form id="challengeForm" action="javascript:void(0);"> <!-- Prevent default form submission -->
+                <input type="text" id="challengeTask" placeholder="Enter the task name" required>
+                <input type="text" id="competitor" placeholder="Enter the competitor's name" required>
+                <button type="submit">Challenge</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 DreamSync. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to handle the challenge redirection -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("DOM loaded, script is running");
+
+            const challengeForm = document.getElementById("challengeForm");
+
+            challengeForm.addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent default form submission
+
+                const taskName = document.getElementById("challengeTask").value;
+                const competitorName = document.getElementById("competitor").value;
+
+                if (taskName && competitorName) {
+                    console.log("Redirecting to duel.html"); // Check if this logs before redirect
+                    window.location.href = "/duel.html";  // Path to your duel.html
+                } else {
+                    alert("Please fill out both the task name and the competitor's name.");
+                }
+            });
+        });
+    </script>
+</body>
+</html>

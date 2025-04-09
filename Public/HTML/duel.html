@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duel - Submit Questions and Answers</title>
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Link to the CSS file -->
+    <script src="/js/duelSubmissionScript.js" defer></script> <!-- Link to the JS file -->
+</head>
+<body>
+    <div class="navbar">
+        <h1>Welcome to DreamSync</h1>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/duels">Duels</a></li>
+            <li><a href="/trades">Trades</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>‧₊˚Duel Submission‧₊˚</h2>
+        <p>Submit your 10 questions and answers. You have 15 minutes to do so!</p>
+
+        <!-- Timer Section -->
+        <div id="timer">
+            <h3>Time Remaining: <span id="timeRemaining">15:00</span></h3>
+        </div>
+
+        <!-- Question and Answer Submission Section -->
+        <div class="qa-submission">
+            <form id="qaForm">
+                <h3>Submit Your Questions and Answers</h3>
+
+                <!-- Dynamic Input Fields for Questions and Answers -->
+                <div id="qaFields">
+                    <!-- These will be populated dynamically using JavaScript -->
+                </div>
+
+                <button type="submit" id="submitQuestionsButton">Submit All Questions</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 DreamSync. All rights reserved.</p>
+    </footer>
+</body>
+</html>

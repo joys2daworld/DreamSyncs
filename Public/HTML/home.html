@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - DreamSync</title>
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Link to the CSS file -->
+    <script src="/js/script.js" defer></script> <!-- Link to the JS file -->
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <h1>Welcome to DreamSync</h1>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/duels">Duels</a></li>
+            <li><a href="/trades">Trades</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Section -->
+    <div class="container">
+        <h2>‧₊˚Checklist‧₊˚</h2>
+        <p>Here are your tasks... Check off what you've completed:</p>
+        
+        <div class="task-list">
+            <ul id="taskList">
+                <!-- Example Tasks - you can populate this dynamically later -->
+                <li><input type="checkbox" id="task1"> Business Plan Defense</li>
+                <li><input type="checkbox" id="task2"> Research Final Defense</li>
+                <li><input type="checkbox" id="task3"> Mag pa-etuc</li>
+                <li><input type="checkbox" id="task4"> Kumain</li>
+            </ul>
+        </div>
+
+        <!-- Add Task Section -->
+        <div class="add-task">
+            <button id="addTaskButton">Add Task</button>
+            <input type="text" id="taskInput" placeholder="Enter new task...">
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 DreamSync. All rights reserved.</p>
+    </footer>
+</body>
+</html>

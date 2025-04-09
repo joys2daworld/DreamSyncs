@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duel Results</title>
+    <link rel="stylesheet" href="../CSS/style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="navbar">
+        <h1>Welcome to DreamSync</h1>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/duels">Duels</a></li>
+            <li><a href="/trades">Trades</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>‧₊˚Duel Results‧₊˚</h2>
+        <div id="results">
+            <!-- Results will be populated here using JavaScript -->
+        </div>
+
+        <!-- Back Button -->
+        <button id="backToDuelsButton">Back to Duels</button>
+    </div>
+
+    <footer>
+        <p>© 2025 DreamSync. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const results = JSON.parse(localStorage.getItem("duelResults"));
+            const resultsElement = document.getElementById("results");
+
+            results.forEach((result, index) => {
+                const resultElement = document.createElement("div");
+                resultElement.innerHTML = `
+                    <p><strong>Question ${index + 1}:</strong> ${result.question}</p>
+                    <p><strong>Your Answer:</strong> ${result.userAnswer}</p>
+                    <p><strong>Correct Answer:</strong> ${result.correctAnswer}</p>
+                `;
+                resultsElement.appendChild(resultElement);
+            });
+
+            // Handle the "Back to Duels" button click
+            document.getElementById("backToDuelsButton").addEventListener("click", function () {
+                window.location.href = "/duels.html";
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+h1, h2 {
+  font-family: 'Kindergarten', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #FFD1DC; /* Light pink background */
+  padding: 20px;
+  text-align: center;
+}
+
+.navbar h1 {
+  color: #e09caa; /* Title text color */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #e09caa;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page Styles */
+.container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.container p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.task-list {
+  margin: 20px 0;
+}
+
+.task-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.add-task {
+  margin-top: 20px;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: #e09caa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-task button:hover {
+  background-color: #d39e8d;
+}
+
+.add-task input {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Duels Page Styles */
+.duels-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.duels-container h2 {
+  font-size: 2em;
+  color: #333;
+}
+
+.duels-container p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.duels-list {
+  margin: 20px 0;
+}
+
+.duels-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.duels-list li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Button for Duels */
+.duels-container button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  background-color: #e09caa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.duels-container button:hover {
+  background-color: #d39e8d;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #FFD1DC; /* Light pink background */
+  color: #e09caa;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+/* Media Queries for Mobile Responsiveness */
+
+/* Small screen devices (phones in portrait) */
+@media (max-width: 600px) {
+  .navbar h1 {
+    font-size: 22px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  .container h2 {
+    font-size: 1.5em;
+  }
+
+  .container p {
+    font-size: 1em;
+  }
+
+  .task-list li {
+    font-size: 1em;
+  }
+
+  .add-task input, .add-task button {
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+  }
+
+  /* Adjust button sizes and layout for smaller screens */
+  .duels-container button {
+    font-size: 1em;
+    padding: 10px;
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+}
+
+/* Medium screen devices (tablets in portrait) */
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 24px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+
+  .container h2 {
+    font-size: 1.8em;
+  }
+
+  .container p {
+    font-size: 1.1em;
+  }
+
+  .task-list li {
+    font-size: 1.1em;
+  }
+
+  .add-task input, .add-task button {
+    font-size: 1.1em;
+    padding: 12px;
+    width: 100%;
+  }
+
+  .duels-container button {
+    font-size: 1.1em;
+    padding: 12px;
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
+}
+
+/* Large screen devices (tablets in landscape and up) */
+@media (min-width: 769px) {
+  .navbar h1 {
+    font-size: 28px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
+
+  .container h2 {
+    font-size: 2em;
+  }
+
+  .container p {
+    font-size: 1.2em;
+  }
+
+  .task-list li {
+    font-size: 1.2em;
+  }
+
+  .add-task input, .add-task button {
+    font-size: 1.2em;
+    padding: 12px;
+    width: 100%;
+  }
+
+  .duels-container button {
+    font-size: 1.2em;
+    padding: 12px;
+  }
+
+  footer p {
+    font-size: 1.2em;
+  }
+}
